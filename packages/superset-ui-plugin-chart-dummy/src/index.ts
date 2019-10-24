@@ -19,12 +19,11 @@
 import { t } from '@superset-ui/translation';
 import { ChartMetadata, ChartPlugin } from '@superset-ui/chart';
 import transformProps from './transformProps';
-import thumbnail from './images/thumbnail.png';
 
 const metadata = new ChartMetadata({
   description: '',
   name: t('Example dummy chart'),
-  thumbnail,
+  thumbnail: './images/thumbnail.png',
 });
 
 export default class DummyChartPlugin extends ChartPlugin {

@@ -42,7 +42,7 @@ export default class DummyChart extends React.PureComponent<DummyChartProps> {
           />
         ))}
         <text x={width / 2} y={height / 2} textAnchor="middle" fontWeight="bold" fontSize="36">
-          Hello!
+          My fancy test!
         </text>
       </svg>
     );

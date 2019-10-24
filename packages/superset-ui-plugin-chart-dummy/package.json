@@ -1,5 +1,5 @@
 {
-  "name": "superset-ui-plugin-chart-dummy",
+  "name": "@superset-ui/plugin-chart-dummy",
   "version": "0.0.0",
   "description": "Superset Chart Plugin - Dummy",
   "sideEffects": [

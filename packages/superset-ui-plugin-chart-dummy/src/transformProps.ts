@@ -20,14 +20,22 @@ import { ChartProps } from '@superset-ui/chart';
  */
 /* eslint-disable sort-keys */
 export default function transformProps(chartProps: ChartProps) {
-  const { width, height, formData, queryData } = chartProps;
+  const { width, height, formData } = chartProps;
   const { color } = formData;
-  const { data } = queryData;
+
+  const points: { x: number; y: number }[] = [];
+
+  for (let i = 0; i < 100; i += 1) {
+    points.push({
+      x: Math.random(),
+      y: Math.random(),
+    });
+  }
 
   return {
     width,
     height,
     color,
-    data,
+    data: points,
   };
 }
